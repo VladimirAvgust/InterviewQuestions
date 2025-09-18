@@ -1,5 +1,5 @@
 # InterviewQuestions
 ## Вопросы с++ для собеседования и примеры
 
-#### [Резюме](materials/resume.docx)
-#### [Вопросы и ответы](materials/questions.md)
+#### 1. [Резюме](materials/resume.docx)
+#### 2. [Вопросы и ответы](materials/questions.md)
