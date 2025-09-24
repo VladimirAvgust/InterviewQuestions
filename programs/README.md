@@ -1,4 +1,4 @@
 # Набор тестовых и учебных программ
 
-[test](./test/)
-[vector](./vector/)
+1. [test](./test/)
+2. [vector](./vector/)
