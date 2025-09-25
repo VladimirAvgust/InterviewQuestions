@@ -2,9 +2,14 @@
 
 using namespace std;
 
-int main(){
-    cout << "start test 6" << endl;
+#include "vector.h"
 
+
+
+int main(){
+    cout << "start test" << endl;
+
+    vector v(10);
 
     cout << "end test" << endl;
 
