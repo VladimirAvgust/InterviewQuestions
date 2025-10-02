@@ -1,8 +1,10 @@
 #include "vector.h"
-vector::vector(unsigned int size){
-    this->size = size;
+
+template <typename Type>
+vector<Type>::vector(unsigned int size){
+    this->lenght = size;
+    
 }
 
-vector::~vector()
-{
-}
+
+

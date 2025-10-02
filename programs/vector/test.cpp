@@ -9,7 +9,10 @@ using namespace std;
 int main(){
     cout << "start test" << endl;
 
-    vector v(10);
+   
+    vector <int> v(10);
+    
+
 
     cout << "end test" << endl;
 
