@@ -1,0 +1,8 @@
+#include "concatenation.h"
+#include "stdio.h"
+int
+main(int size, char **strok)
+{
+	play(size, strok);
+	return 0;
+}
