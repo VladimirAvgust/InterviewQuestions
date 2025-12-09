@@ -39,5 +39,6 @@
 
 # debug information files
 *.dwo
+.vscode
 .vscode/tasks.json
 bin
