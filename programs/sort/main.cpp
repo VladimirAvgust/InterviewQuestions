@@ -10,7 +10,7 @@ using namespace std;
 int main() {
 	
 
-	DataCreation data(100000, 1, 100);
+	DataCreation data(10000, 1, 100);
 	//data.print();
 	
 	BubbleSort bubbleSort(data.getData(), data.getLenght());

@@ -5,3 +5,5 @@
 3. [sort](./sort/)
 4. [thirteenSystemNumber](./thirteenSystemNumber/) - исп. динамического программирования
 5. [fileConcatenation](./fileСoncatenation/) - программа объеденения текстовых файлов
+6. [matrixOperatin](./matrixOperation/) - действия над матрицами и векторами
+
