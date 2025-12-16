@@ -32,8 +32,17 @@
     <summary>Ответ</summary>
         <p>
             1. Обобщенный класс позволяет работать с разными типами данных ключевое слово template<br>
+            <pre>
+	            <code>
+                template<typename Type>
+                Type max(Type a, Type b){ 
+                    return (a >= b ? a : b);
+                }
+	            </code>
+            </pre>
 
             2. шаблонная функция 
+    
             <pre>
 	            <code>
                 template<typename Type>
