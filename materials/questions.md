@@ -38,12 +38,9 @@
                 class Wrapper {
                     private:
                         T value;          // Поле типа T
-    
                     public:
                         Wrapper(T val) : value(val) {}  // Конструктор
-    
                         T getValue() const { return value; }  // Метод доступа
-    
                         void setValue(T val) { value = val; } // Метод изменения
                 };
 	            </code>
