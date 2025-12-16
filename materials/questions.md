@@ -34,15 +34,21 @@
             1. Обобщенный класс позволяет работать с разными типами данных ключевое слово template<br>
             <pre>
 	            <code>
-                template<typename Type>
-                Type max(Type a, Type b){ 
-                    return (a >= b ? a : b);
-                }
+                template <typename T>  // Объявление шаблонного параметра
+                class Wrapper {
+                    private:
+                        T value;          // Поле типа T
+    
+                    public:
+                        Wrapper(T val) : value(val) {}  // Конструктор
+    
+                        T getValue() const { return value; }  // Метод доступа
+    
+                        void setValue(T val) { value = val; } // Метод изменения
+                };
 	            </code>
             </pre>
-
-            2. шаблонная функция 
-    
+            2. Шаблонная функция
             <pre>
 	            <code>
                 template<typename Type>
