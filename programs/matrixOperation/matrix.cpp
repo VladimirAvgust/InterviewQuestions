@@ -3,6 +3,16 @@
 #include <random>
 
 Matrix::Matrix(){}
+
+Matrix::Matrix(const Matrix& m){
+    this->lenX = m.lenX;
+    this->lenY = m.lenY;
+    this->matrix = new int *[m.lenX];
+    for(int i = 0; i < m.lenX; i++){
+        matrix[i] = new int [m.lenY];
+    }
+}
+
 Matrix::Matrix(const int lenX, const int lenY){
     this->lenX = lenX;
     this->lenY = lenY;
@@ -41,10 +51,10 @@ std::ostream& operator << (std::ostream &os, const Matrix &matrix){
 Matrix operator + (Matrix const  &matrix1, Matrix const & matrix2){
     if(matrix1.lenX == matrix2.lenX && matrix2.lenY == matrix2.lenY){
         Matrix summ(matrix1.lenX, matrix1.lenY);
-        summ.matrix = matrix1.matrix;
+        
         for(int i = 0; i < matrix1.lenX; i++){
             for(int j = 0; j < matrix1.lenY; j++){
-                summ.matrix[i][j] += matrix2.matrix[i][j];
+                summ.matrix[i][j] = matrix2.matrix[i][j] + matrix2.matrix[i][j];
             }
         }
         return summ;
@@ -54,13 +64,12 @@ Matrix operator + (Matrix const  &matrix1, Matrix const & matrix2){
 
 Matrix operator * (Matrix const &matrix1, Matrix const &matrix2){
     //для умножение важно, чтобы количество столбцов первой матрицы было равно кличеству строк второй матрицы 
-   
     if(matrix1.lenX == matrix2.lenY){
         Matrix product = Matrix(matrix1.lenX, matrix2.lenY);
         for (int i = 0; i < product.lenX; i++){
             for (int j = 0; j < product.lenY; j++){
-                for (int k =0; k < matrix2.lenY; k++){
-                    product.matrix[i][j] += (matrix1.matrix[i][k] + matrix2.matrix[k][j]); 
+                for (int k =0; k < matrix2.lenX; k++){
+                    product.matrix[i][j] += matrix1.matrix[i][k] * matrix2.matrix[k][j]; 
                 }
             }
         }

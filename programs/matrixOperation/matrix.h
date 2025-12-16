@@ -7,6 +7,7 @@ class Matrix{
         int lenY =0;
     public:
         Matrix();
+        Matrix(const Matrix& m); //конструктор копирования
         Matrix(const int lenX, const int lenY);
         void createRandomMatrix(const int min, const int max);
         

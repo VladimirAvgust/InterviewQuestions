@@ -31,6 +31,9 @@ int main(){
     cout << "Сложение" << endl;
     Matrix m3 = m1 + m2;
     cout << m3 << endl;
+    cout << m1 << endl;
+    cout << m2 << endl;
+
 
 
     cout << "Умножение" << endl;
